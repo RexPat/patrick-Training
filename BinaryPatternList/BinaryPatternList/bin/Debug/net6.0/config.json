@@ -1,0 +1,7 @@
+{
+	"DIRECTORY_NAME": "128_ddr_sw_fpga_fw_reports",
+	"FILE_EXTENEION": "*.gpkt",
+	"JSON_OUTPUT_LOCATION": "",
+	"CSV_OUTPUT_LOCATION": "",
+	"ADDRESS_LENGTH": 16
+}

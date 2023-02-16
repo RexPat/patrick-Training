@@ -1,0 +1,17 @@
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\bin\Debug\net6.0\BinaryPatternList.exe
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\bin\Debug\net6.0\BinaryPatternList.deps.json
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\bin\Debug\net6.0\BinaryPatternList.runtimeconfig.json
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\bin\Debug\net6.0\BinaryPatternList.dll
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\bin\Debug\net6.0\BinaryPatternList.pdb
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.csproj.AssemblyReference.cache
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.AssemblyInfoInputs.cache
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.AssemblyInfo.cs
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.csproj.CoreCompileInputs.cache
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.dll
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\refint\BinaryPatternList.dll
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.pdb
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.genruntimeconfig.cache
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\ref\BinaryPatternList.dll
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\GRL\source\repos\BinaryPatternList\BinaryPatternList\obj\Debug\net6.0\BinaryPatternList.csproj.CopyComplete

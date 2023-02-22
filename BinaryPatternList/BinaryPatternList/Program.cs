@@ -21,6 +21,8 @@ namespace binaryPattern
             JArray patternList = searchPattern.getSearchPatterArray();
             var patternDecimalList = new List<List<byte>>();
             var outputModelList = new List<OutputModel>();
+
+            var stringList = new List<string>();    
             
             
             
@@ -43,13 +45,14 @@ namespace binaryPattern
                    address = getFiles.giveCountJson(binaryData, searchPattern.getSearchPatternDecimalList(pat), count, file);
                    count++;
                    patternInfoList.Add(new SearchPattern() { address = address, count = address.Count, value = pat});
+                    stringList.Add($"{file}, {pat}, {address.Count}");
                 }
 
                 
                 outputModelList.Add(new OutputModel() { inputFilePath = file, patternInfo = patternInfoList});
                 
             }
-
+            getFiles.createCSV(stringList);
 
 
 

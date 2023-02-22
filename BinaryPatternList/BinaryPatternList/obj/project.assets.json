@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\GRL\\source\\repos\\BinaryPatternList\\BinaryPatternList\\BinaryPatternList.csproj",
+      "projectUniqueName": "D:\\Apps-Github\\patrick-Training\\BinaryPatternList\\BinaryPatternList\\BinaryPatternList.csproj",
       "projectName": "BinaryPatternList",
-      "projectPath": "C:\\Users\\GRL\\source\\repos\\BinaryPatternList\\BinaryPatternList\\BinaryPatternList.csproj",
+      "projectPath": "D:\\Apps-Github\\patrick-Training\\BinaryPatternList\\BinaryPatternList\\BinaryPatternList.csproj",
       "packagesPath": "C:\\Users\\GRL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\GRL\\source\\repos\\BinaryPatternList\\BinaryPatternList\\obj\\",
+      "outputPath": "D:\\Apps-Github\\patrick-Training\\BinaryPatternList\\BinaryPatternList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

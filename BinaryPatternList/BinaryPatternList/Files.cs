@@ -28,6 +28,34 @@ namespace BinaryPatternList
             return files;
         }
 
+        public void createCSV(List <string> value)
+        {
+            // Path to the CSV file
+            string filePath = @"D:\output.csv";
+
+            SearchPattern stobj= new SearchPattern();
+               
+
+            // Create the file if it doesn't exist
+            if (!File.Exists(filePath))
+            {
+                File.Create(filePath).Close();
+            }
+
+            // Write some data to the CSV file
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                
+                writer.WriteLine("filePath, pattern, count");
+                foreach(string val in value)
+                {
+                    writer.WriteLine(val);
+                }   
+                
+                
+            }
+        }
+
         public List<PatternAddress> giveCountJson(byte[] binaryData, List <byte> pattern, int count1, string file1)
         {
             //iterate file
@@ -43,11 +71,11 @@ namespace BinaryPatternList
            
             var parentObject = new Dictionary<string, object>();
             int count = 0;
+            
 
-            
-                
-            
-                
+
+
+
             var list1 = pattern;
             var binaryList = binaryData.ToList();
             int i = 0;
@@ -77,14 +105,15 @@ namespace BinaryPatternList
             
             var object1 = new { binaryFileCount = getFiles().Length, searchPattern = pattern };
             parentObject.Add("DATA", object1);
+            
             // The path to the binary file
-
+            
             
 
             string output = JsonConvert.SerializeObject(parentObject);
-            string loc = @$"C:\Users\GRL\Desktop\output{count1}.json";
-            File.WriteAllText(loc, output);
-
+            //string loc = @$"C:\Users\GRL\Desktop\output{count1}.json";
+            //File.WriteAllText(loc, output);
+            
             return addressObjectList;
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SiAaHouY1Iz17Iq9Je7PKyw3C5QhggODe9Z4xJ84fI3fTxGEuvKkQ1j+Wpz3ZRJ22zHzFhQtUvcSowLoY/W+Ew==",
+  "dgSpecHash": "iGz9fk6VEiwQlPkebuSBBZOoV4FOR7407XJJX2Xbp3RwxcucnyNyJknmyQuELqPf/0aFrX8j58nM274lPnVCNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\GRL\\source\\repos\\BinaryPatternList\\BinaryPatternList\\BinaryPatternList.csproj",
+  "projectFilePath": "D:\\Apps-Github\\patrick-Training\\BinaryPatternList\\BinaryPatternList\\BinaryPatternList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\GRL\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],

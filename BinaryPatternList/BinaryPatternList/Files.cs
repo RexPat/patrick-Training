@@ -14,7 +14,7 @@ namespace BinaryPatternList
         public List<OutputModel> outModList = new List<OutputModel>();
         List<string> inpFilesList = new List<string>();
 
-        private string path  = @"C:\Users\GRL\Downloads\128_ddr_sw_fpga_fw_reports\";
+        
         public List<string> getFiles()
         {
             List <string> files = new List<string> ();
@@ -24,8 +24,8 @@ namespace BinaryPatternList
             string jsonConfig = File.ReadAllText(configPath);
             JObject jObjectConfig = JObject.Parse(jsonConfig);
             string fileExtension = (string)jObjectConfig["FILE_EXTENEION"];
-            
             JArray pathArray = (JArray)jObjectConfig["DIRECTORY_PATH"];
+            
             foreach (string pt in pathArray)
             {
                 path_ = path_ + "\\" + pt;

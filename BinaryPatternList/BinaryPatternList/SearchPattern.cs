@@ -53,25 +53,25 @@ namespace BinaryPatternList
             
         }
 
-        public string getSearchPatternString(List<byte> pattern)
-        {
+        //public string getSearchPatternString(List<byte> pattern)
+        //{
 
-            string stringReturn = "";
-            try
-            {   foreach(byte dn in pattern)
-                {
+        //    string stringReturn = "";
+        //    try
+        //    {   foreach(byte dn in pattern)
+        //        {
                     
-                   stringReturn = stringReturn+" "+(dn.ToString("X"));
+        //           stringReturn = stringReturn+" "+(dn.ToString("X"));
                     
-                }
-                return stringReturn.Trim();
+        //        }
+        //        return stringReturn.Trim();
 
-            }
-            catch 
-            {
-                return stringReturn;
-            }
-        }
+        //    }
+        //    catch 
+        //    {
+        //        return stringReturn;
+        //    }
+        //}
 
         
 

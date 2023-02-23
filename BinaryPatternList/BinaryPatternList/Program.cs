@@ -6,6 +6,7 @@ using System.Collections;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using BinaryPatternList;
+using System.Diagnostics;
 
 namespace binaryPattern
 {
@@ -36,7 +37,7 @@ namespace binaryPattern
 
             foreach(string file in getFiles.getFiles())
             {
-                Console.WriteLine($"{file}");
+                //Console.WriteLine($"{file}");
                 byte[] binaryData = File.ReadAllBytes(file);
                 var address = new List<PatternAddress>();
                 var patternInfoList = new List<SearchPattern>();

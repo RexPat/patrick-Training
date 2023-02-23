@@ -14,24 +14,34 @@ namespace BinaryPatternList
         public List<OutputModel> outModList = new List<OutputModel>();
         List<string> inpFilesList = new List<string>();
 
-        private string path  = @"C:\Users\GRL\Downloads\128_ddr_sw_fpga_fw_reports";
-        public string[] getFiles()
+        private string path  = @"C:\Users\GRL\Downloads\128_ddr_sw_fpga_fw_reports\";
+        public List<string> getFiles()
         {
+            List <string> files = new List<string> ();
+            string path_ = @"";
             string curDirConfig = Directory.GetCurrentDirectory();
             string configPath = curDirConfig + @"\config.json";
             string jsonConfig = File.ReadAllText(configPath);
             JObject jObjectConfig = JObject.Parse(jsonConfig);
             string fileExtension = (string)jObjectConfig["FILE_EXTENEION"];
-            string[] files = Directory.GetFiles(path, fileExtension, SearchOption.AllDirectories);
-
-            inpFilesList = files.ToList();
+            
+            JArray pathArray = (JArray)jObjectConfig["DIRECTORY_PATH"];
+            foreach (string pt in pathArray)
+            {
+                path_ = path_ + "\\" + pt;
+            }
+            path_ = path_.Substring(1);
+            files = Directory.GetFiles(path_, fileExtension, SearchOption.AllDirectories).ToList();
+            
+            
+            
             return files;
         }
 
         public void createCSV(List <string> value)
         {
             // Path to the CSV file
-            string filePath = @"D:\output.csv";
+            string filePath = @"D:\patternSearchAppOutput.csv";
 
             SearchPattern stobj= new SearchPattern();
                
@@ -103,7 +113,7 @@ namespace BinaryPatternList
             count++;
 
             
-            var object1 = new { binaryFileCount = getFiles().Length, searchPattern = pattern };
+            var object1 = new { binaryFileCount = getFiles().Count, searchPattern = pattern };
             parentObject.Add("DATA", object1);
             
             // The path to the binary file
